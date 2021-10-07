@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação do CSS / Image -->
+    <link rel="stylesheet" href="../css/form-pratica.css">
+
+    <!-- Importação do FeatherIcons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Font Start - Form Prática</title>
+</head>
+<body>    
+    <!-- Formulário Prática -->
+    <div class="form-container">
+        <form action="">
+            <h3>SIGN IN</h3>
+            <div class="input-container">
+                <input type="text" placeholder="Username">
+                <i data-feather="user"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="password" placeholder="Password">
+                <i data-feather="lock"></i>
+            </div>
+
+            <div class="options-container">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div><a href="https://www.google.com/">Reset Password</a>
+            </div>
+            <input type="submit" value="Sing In">
+
+            <p>or Sign in with</p>
+
+            <hr>
+
+            <div class="social-media-container">
+                <div class="icon-container">
+                    <a href="https://facebook.com/"><i data-feather="facebook" ></i></a>
+                </div>
+    
+                <div class="icon-container">
+                    <a href="https://gmail.com/"><i data-feather="mail"></i></a>
+                </div>
+    
+                <div class="icon-container">
+                   <a href="https://twitter.com/"><i data-feather="twitter"></i></a> 
+                </div>
+            </div>            
+
+            <hr>
+
+            <p class="footer">Do not have an count? <a href="https://www.google.com/">Sign Up now</a></p>
+        </form>
+    </div>
+
+    <!-- Script do FeatherIcons -->
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
