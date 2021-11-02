@@ -1,0 +1,104 @@
+/* --> Configurações gerais <-- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;500;800&display=swap');
+
+:root {
+    --blue-light: #005CAF;
+    --grey-light: #96B3C2;
+    --black-dark: #212226;
+    --grey: #edecec;
+    --green: #15CDCB;
+
+    --menu-height: 70px;    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--black-dark);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Noto Sans Mono', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+p {
+    color: var(--grey);
+}
+
+button {
+    background: var(--blue-light);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 18px;
+
+    opacity: .8;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* --> Configurações de Elementos <-- */
+
+header {
+    height: calc(100vh - var(--menu-height));
+
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--green);
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    height: var(--menu-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: var(--black-dark);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav .img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 20px;
+    color: var(--green);
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+section {
+    height: 1500px;
+    background: violet;
+}
