@@ -170,6 +170,10 @@ section {
 
     nav {
         padding: 0 15px;
+        bottom: 0;
+        top: unset;
+        width: 100%;
+        position: fixed;
     }
 
     nav ul a {
