@@ -8,7 +8,7 @@
     --grey: #edecec;
     --green: #15CDCB;
 
-    --menu-height: 70px;    
+    --menu-height: 70px;
 }
 
 * {
@@ -30,11 +30,12 @@ h1 {
 }
 
 h2 {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 p {
     color: var(--grey);
+    text-align: justify;
 }
 
 button {
@@ -62,9 +63,13 @@ header {
 }
 
 header .container {
-    width: 50%;
+    width: 60%;
     height: fit-content;
     padding: 0 100px;
+}
+
+header .container img {
+    display: none;
 }
 
 header .container h1 {
@@ -91,14 +96,88 @@ nav .img {
     height: 45px;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a {
     font-size: 20px;
     color: var(--green);
     text-decoration: none;
-    margin: 0 30px;
+}
+
+nav ul a svg{
+    display: none;
 }
 
 section {
     height: 1500px;
     background: violet;
+}
+
+/* RESPONSIVIDADE */
+
+/* Small Desktop */
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    nav ul a {
+        font-size: 18px;
+    }
+}
+
+/* Tablet / Ipad */
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+    }
+
+    header .container img {
+        display: inline;
+        margin-bottom: 70px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav {
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
