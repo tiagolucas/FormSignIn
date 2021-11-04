@@ -56,7 +56,7 @@ button:hover {
 /* --> Configurações de Elementos <-- */
 
 .title-purple {
-    color: var(--purple);
+    color: var(--blue-light);
 }
 
 .title-green {
@@ -128,13 +128,28 @@ nav ul a svg{
 
 .about-me .img-container {
     width: 50%;
-    display: block;
-    margin: auto;
     text-align: center;
+    position: relative;
 }
 
 .about-me .img-container img {
     width: 70%;
+    height: 100%;
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--blue-light);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-3.3deg);
+    color: var(--green);
 }
 
 /* RESPONSIVIDADE */
